@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const theme = {
+  grid: {
+    'container-s': '30rem',
+    'container-l': '11rem',
+  },
   colors: {
     primary: '#57bbbc',
     secondary: '#1a0e49',
