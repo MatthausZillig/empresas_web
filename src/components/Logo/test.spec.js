@@ -3,12 +3,9 @@ import { screen } from '@testing-library/react';
 import { renderWithTheme } from '../../utils/test/helpers';
 import Logo from './index';
 
-const makeSut = () => {
-  renderWithTheme(<Logo />);
-};
-
-describe('Logo Component', () => {
-  test('Should be the test describe', () => {
-    // TODO:
+describe('<Logo />', () => {
+  it('should render a img', () => {
+    renderWithTheme(<Logo />);
+    expect(screen.getByRole('img')).toBeInTheDocument();
   });
 });
