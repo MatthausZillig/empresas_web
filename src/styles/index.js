@@ -2,12 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const theme = {
   grid: {
-    'container-s': '30rem',
-    'container-l': '11rem',
+    s: '30rem',
+    l: '11rem',
   },
   colors: {
     primary: '#57bbbc',
     secondary: '#1a0e49',
+    text: '#383743',
     background: '#ebe9d7',
     gray: '#d8d8d8',
     'warm-grey': '#8d8c8c',
@@ -34,7 +35,7 @@ const theme = {
     sizes: {
       xsmall: '0.5rem',
       small: '0.7rem',
-      medium: '0.8rem',
+      medium: '1.8rem',
       large: '1rem',
       xlarge: '1.6rem',
     },
@@ -48,12 +49,18 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
   html {
     font-size: 62.5%;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ebe9d7
   }
 `;
 

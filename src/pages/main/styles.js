@@ -2,13 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 4em;
-  background: ${(props) => props.theme.colors.background};
   height: 100vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  width: ${({ theme }) => theme.grid.s};
 `;
 
 export const Image = styled.img`

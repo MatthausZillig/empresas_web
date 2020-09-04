@@ -1,10 +1,12 @@
 import React from 'react';
 import * as S from './styles';
-import StarkLogo from '../../../static/stark.png';
+import Logo from '../../components/Logo/index';
+import Heading from '../../components/Heading/index';
 
 const Main = () => (
   <S.Wrapper>
-    <S.Image data-testid="logo" src={StarkLogo} alt="Stark Boilerplate" title="Stark Boilerplate" />
+    <Logo />
+    <Heading>BEM VINDO AO EMPRESAS</Heading>
   </S.Wrapper>
 );
 
