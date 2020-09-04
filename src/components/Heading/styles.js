@@ -2,7 +2,6 @@
 
 export const Wrapper = styled.h2`
   width: 15rem;
-  height: 2rem;
   font-family: ${({ theme }) => theme.font.fontFamily};
   font-weight: bold;
   font-stretch: normal;

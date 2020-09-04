@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const theme = {
   grid: {
-    s: '30rem',
-    l: '11rem',
+    l: '30rem',
+    s: '11rem',
   },
   colors: {
     primary: '#57bbbc',
@@ -19,7 +19,7 @@ const theme = {
     xs: '0.4rem',
     s: '0.8rem',
     m: '1.2rem',
-    l: '7rem',
+    l: '5rem',
     xl: '12rem',
   },
   layers: {
@@ -38,7 +38,7 @@ const theme = {
       xsmall: '0.5rem',
       small: '0.7rem',
       medium: '1.8rem',
-      large: '1rem',
+      large: '1.2rem',
       xlarge: '1.6rem',
     },
   },
