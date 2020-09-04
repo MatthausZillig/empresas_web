@@ -12,4 +12,5 @@ export const Wrapper = styled.h2`
   text-align: center;
   font-size: ${({ theme }) => theme.font.sizes.medium};
   color: ${({ theme }) => theme.colors.text};
+  margin-top: ${({ theme }) => theme.spacing.l};
 `;

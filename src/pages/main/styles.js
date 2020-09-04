@@ -8,8 +8,3 @@ export const Wrapper = styled.div`
   align-items: center;
   width: ${({ theme }) => theme.grid.s};
 `;
-
-export const Image = styled.img`
-  margin: 1em auto;
-  display: block;
-`;

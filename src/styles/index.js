@@ -19,6 +19,8 @@ const theme = {
     xs: '0.4rem',
     s: '0.8rem',
     m: '1.2rem',
+    l: '7rem',
+    xl: '12rem',
   },
   layers: {
     base: 10,
@@ -44,10 +46,17 @@ const theme = {
 };
 
 const GlobalStyle = createGlobalStyle`
-  * {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main[data-js="app"] {
+    display: flex;
+    justify-content: center;
   }
 
   html {
