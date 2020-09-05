@@ -7,9 +7,7 @@ import Button from './';
 describe('Button Component', () => {
   test('Should be the a green button', () => {
     renderWithTheme(<Button />);
-    expect(screen.getByRole('button')).toHaveStyle({
-      background: 'rgb(87, 187, 188)',
-    });
+    expect(screen.getByRole('button')).toHaveStyle('background: rgb(87, 187, 188)');
   });
   test('Should be the a green button with the text enter', () => {
     renderWithTheme(<Button />);
