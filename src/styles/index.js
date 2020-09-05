@@ -37,7 +37,7 @@ const theme = {
     sizes: {
       xsmall: '0.5rem',
       small: '0.7rem',
-      medium: '1.8rem',
+      medium: '1.5em',
       large: '1.2rem',
       xlarge: '1.6rem',
     },

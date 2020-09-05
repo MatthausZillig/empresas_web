@@ -8,13 +8,13 @@ describe('Heading Component', () => {
   it('Should be black by default', () => {
     renderWithTheme(<Heading />);
     expect(screen.getByRole('heading')).toHaveStyle({
-      color: '#383743',
+      color: 'rgb(56, 55, 67)',
     });
   });
   it('Should be black by default', () => {
     renderWithTheme(<Heading />);
     expect(screen.getByRole('heading')).toHaveStyle({
-      'font-size': '1.8rem',
+      'font-size': '1.5em',
     });
   });
 });

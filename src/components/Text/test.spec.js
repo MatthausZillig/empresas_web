@@ -7,7 +7,7 @@ describe('Text Component', () => {
   it('Should be black by default', () => {
     renderWithTheme(<Text />);
     expect(screen.getByTestId('text')).toHaveStyle({
-      color: '#383743',
+      color: 'rgb(56, 55, 67)',
     });
   });
   it('Should be 1.2rem', () => {
