@@ -2,10 +2,10 @@
 
 ```sh
 # Clone repository
-$ git clone https://github.com/brenofsena/stark-boilerplate my-project
+$ git clone 
 
 # install dependencies
-$ cd my-project && yarn install
+$ yarn 
 
 # run the project
 $ yarn dev
@@ -39,5 +39,3 @@ $ yarn dev
 - Husky
 - Lint Staged
 - Travis CI
-
-[MIT License](./license) (c) Breno Sena
