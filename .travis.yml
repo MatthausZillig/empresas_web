@@ -12,6 +12,11 @@ script:
   - npm run lint
   - npm run test:coveralls
   - npm run test:cypress:ci
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API
+  app: empresas-web-matthaus
+  skip_cleanup: true
 
 notifications:
   email: false

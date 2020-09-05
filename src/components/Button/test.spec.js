@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { screen, getByRole, getByText, fireEvent } from '@testing-library/react';
 import { renderWithTheme } from '../../utils/test/helpers';
-import Button from './index';
+import Button from './';
 
 describe('Button Component', () => {
   test('Should be the a green button', () => {

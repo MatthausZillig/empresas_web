@@ -1,11 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 
-import Logo from '../../components/Logo/index';
-import Heading from '../../components/Heading/index';
-import Text from '../../components/Text/index';
-import Input from '../../components/Input/index';
-import Button from '../../components/Button/index';
+import { Logo, Heading, Text, Input, Button } from '../../components';
 
 const Main = () => (
   <S.Wrapper>
