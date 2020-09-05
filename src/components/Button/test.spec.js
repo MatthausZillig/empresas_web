@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import 'jest-styled-components';
 import { screen, getByRole, getByText, fireEvent } from '@testing-library/react';
 import { renderWithTheme } from '../../utils/test/helpers';
 import Button from './';
