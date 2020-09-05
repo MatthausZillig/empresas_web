@@ -1,10 +1,4 @@
-<p align="center">
-<img src="./static/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
-</p>
-
-> ## Stark Boilerplate
-
-> ### Getting Started
+[![Coverage Status](https://coveralls.io/repos/github/MatthausZillig/empresas_web/badge.svg?branch=master)](https://coveralls.io/github/MatthausZillig/empresas_web?branch=master)
 
 ```sh
 # Clone repository
