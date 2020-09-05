@@ -1,6 +1,7 @@
 ﻿import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  margin-top: ${({ theme }) => theme.spacing.m};
   border-bottom: 1px solid #383743;
   width: ${({ theme }) => theme.grid.l};
   display: flex;
@@ -13,6 +14,9 @@ export const Wrapper = styled.div`
   svg {
     margin-right: ${({ theme }) => theme.spacing.xs};
     width: 4rem;
+  }
+  svg[data-testid='icon-lock'] {
+    height: 3.5rem;
   }
   input:focus {
     outline-offset: none;

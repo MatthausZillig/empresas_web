@@ -14,7 +14,7 @@ const theme = {
     'warm-grey': '#8d8c8c',
     white: '#fff',
   },
-  borderRadius: '8px',
+  borderRadius: '0.6rem',
   spacing: {
     xs: '0.4rem',
     s: '0.8rem',

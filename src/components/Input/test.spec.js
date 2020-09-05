@@ -8,7 +8,6 @@ describe('Input Component', () => {
     renderWithTheme(<Input />);
     expect(screen.getByRole('textbox')).toBeInTheDocument();
   });
-
   test('Should be a email input by default', () => {
     renderWithTheme(<Input />);
     expect(screen.getByTestId('icon-email')).toBeInTheDocument();
