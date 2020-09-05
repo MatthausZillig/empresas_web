@@ -1,17 +1,17 @@
 ﻿import React from 'react';
 import 'jest-styled-components';
-import { screen, getByRole, getByText, fireEvent } from '@testing-library/react';
+import { screen, fireEvent } from '@testing-library/react';
 import { renderWithTheme } from '../../utils/test/helpers';
 import Button from './';
 
 describe('Button Component', () => {
-  test('Should be the a green button', () => {
+  test('Should be render a button', () => {
     renderWithTheme(<Button />);
-    expect(screen.getByRole('button')).toHaveStyle('background: rgb(87, 187, 188)');
+    expect(screen.getByRole('button'));
   });
-  test('Should be the a green button with the text enter', () => {
+  test('Should be render a button with the text enter', () => {
     renderWithTheme(<Button />);
-    expect(screen.getByText(/entrar/i));
+    expect(screen.getByText(/entrar/i)).toBeInTheDocument();
   });
 
   test('Should be has the click event', () => {
