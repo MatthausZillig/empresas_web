@@ -67,9 +67,9 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #ebe9d7
+  body{
+    font-family: ${theme.font.fontFamily};
+    background: ${theme.colors.background};
   }
 `;
 
