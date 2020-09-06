@@ -1,15 +1,40 @@
-﻿import styled from 'styled-components';
+﻿import styled, { css } from 'styled-components';
+
+const wrapperModifiers = {
+  normal: () => css`
+    border-bottom: 1px solid #383743;
+  `,
+  error: () => css`
+    border-bottom: 1px solid #ff0f44;
+  `,
+};
 
 export const Wrapper = styled.div`
   margin-top: ${({ theme }) => theme.spacing.m};
-  border-bottom: 1px solid #383743;
   width: ${({ theme }) => theme.grid.l};
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  ${({ error }) => css`
+    ${error ? wrapperModifiers.error() : wrapperModifiers.normal()}
+    p {
+      width: 25px;
+      height: 22px;
+      border-radius: 50%;
+      background: #ff0f44;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  `}
+
   input {
     border: none;
     background: inherit;
+    width: 30rem;
   }
   svg {
     margin-right: ${({ theme }) => theme.spacing.xs};

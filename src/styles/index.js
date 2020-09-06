@@ -56,7 +56,9 @@ const GlobalStyle = createGlobalStyle`
 
   main[data-js="app"] {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   html {

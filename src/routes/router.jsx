@@ -1,19 +1,27 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Spinner } from '../components';
+import { Spinner, Header } from '../components';
+import { UserStorage } from '../contexts/UserContext';
 
 const Main = lazy(() => import('../pages/main/main'));
+const Home = lazy(() => import('../pages/home/home'));
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<Spinner />}>
-        <Switch>
-          <Route path="/" exact component={Main} />
-        </Switch>
-      </Suspense>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <UserStorage>
+          <Header />
+          <Suspense fallback={<Spinner />}>
+            <Switch>
+              <Route path="/" exact component={Main} />
+              <Route path="/home" component={Home} />
+            </Switch>
+          </Suspense>
+        </UserStorage>
+      </BrowserRouter>
+    </>
   );
 };
 
