@@ -8,9 +8,9 @@ export const UserContext = React.createContext();
 export const UserStorage = ({ children }) => {
   const { data, client, token, uid, loading, error, request } = useFetch();
 
-  function userLogin(username, password) {
+  function userLogin(username, password, push) {
     const { url, options } = USER_POST({ email: username, password: password });
-    request(url, options);
+    request(url, options, push);
   }
 
   return (

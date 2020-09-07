@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const useFetch = () => {
   const [data, setData] = React.useState(null);
@@ -8,7 +9,9 @@ const useFetch = () => {
   const [uid, setUid] = React.useState(null);
   const [token, setToken] = React.useState(null);
 
-  const request = React.useCallback(async (url, options) => {
+  const history = useHistory();
+
+  const request = React.useCallback(async (url, options, push) => {
     let response;
     let json;
     try {
@@ -19,11 +22,13 @@ const useFetch = () => {
       setUid(response.headers.get('uid'));
       setToken(response.headers.get('access-token'));
       json = await response.json();
-
+      if (response.ok === true) {
+        history.push(push);
+      }
       if (response.ok === false) throw new Error(json.message);
     } catch (err) {
       json = null;
-      setError(err.message);
+      setError(true);
     } finally {
       setData(json);
       setLoading(false);

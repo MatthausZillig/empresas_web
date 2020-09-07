@@ -54,6 +54,10 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #ebe9d7 inset;
+}
   main[data-js="app"] {
     display: flex;
     flex-direction: column;

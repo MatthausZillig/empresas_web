@@ -2,7 +2,7 @@
 
 const types = {
   password: {
-    regex: /12341234/,
+    regex: /[0-9]/,
     message: 'Senha inválida',
   },
   email: {

@@ -20,7 +20,22 @@ export const Wrapper = styled.div`
     ${error ? wrapperModifiers.error() : wrapperModifiers.normal()}
     p {
       width: 25px;
-      height: 22px;
+      height: 25px;
+      border-radius: 50%;
+      background: #ff0f44;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  `}
+
+  ${({ isError }) => css`
+    ${isError ? wrapperModifiers.error() : wrapperModifiers.normal()}
+    p {
+      width: 25px;
+      height: 25px;
       border-radius: 50%;
       background: #ff0f44;
       display: flex;
@@ -34,8 +49,9 @@ export const Wrapper = styled.div`
   input {
     border: none;
     background: inherit;
-    width: 30rem;
+    width: 23rem;
   }
+
   svg {
     margin-right: ${({ theme }) => theme.spacing.xs};
     width: 4rem;
