@@ -1,11 +1,11 @@
 import React from 'react';
 import * as S from './styles';
 
-const Spinner = () => {
+const Spinner = ({ lazy }) => {
   return (
     <>
       <S.Spinner data-testid="spinner"></S.Spinner>
-      <S.Overlay />
+      {lazy && <S.Overlay />}
     </>
   );
 };

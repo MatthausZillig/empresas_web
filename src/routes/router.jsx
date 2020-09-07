@@ -9,19 +9,17 @@ const Home = lazy(() => import('../pages/home/home'));
 
 const Router = () => {
   return (
-    <>
-      <BrowserRouter>
-        <UserStorage>
-          <Header />
-          <Suspense fallback={<Spinner />}>
-            <Switch>
-              <Route path="/" exact component={Main} />
-              <Route path="/home" component={Home} />
-            </Switch>
-          </Suspense>
-        </UserStorage>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <UserStorage>
+        <Header />
+        <Suspense fallback={<Spinner lazy />}>
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/home" component={Home} />
+          </Switch>
+        </Suspense>
+      </UserStorage>
+    </BrowserRouter>
   );
 };
 

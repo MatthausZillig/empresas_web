@@ -1,11 +1,28 @@
 [![Coverage Status](https://coveralls.io/repos/github/MatthausZillig/empresas_web/badge.svg?branch=master)](https://coveralls.io/github/MatthausZillig/empresas_web?branch=master)
 
+> # :rocket: EMPRESAS WEB
+>
+> Do zero ao deploy, usei o Stark Boilerplate - ["https://github.com/brenofsena/stark-boilerplate"] como base.
+> CI/CD com Travis CI integrado ao Heroku, além disso procurei usar as boas práticas de TDD usando o React Testing Library para a contrução dos componentes, configurei o plop para a automatização da criação de componentes. pages, contexts e hooks.
+
+> Link do projeto em produção - ["https://empresas-web-matthaus.herokuapp.com/"]
+
+> ## Falta de tempo
+
+> ### Disclaimer
+>
+> O projeto não está 100% finalizado.
+
+> ### A falta de tempo
+>
+> Meu momento atual de carreira e de vida pessoal (filho) não me permitiu finalizar e/ou construir o desafio com a perfeição que exijo das aplicações que desenvolvo. No trabalho, com a black friday chegando as demandas estão muito intensas e estou em um momento de transição onde estou herdando aos poucos as tarefas de Tech lead dos Devs da Corebiz - ["https://www.linkedin.com/company/corebiz-brasil/"] dentro da Whirlpool. Fora que minha esposa ainda está trabalhando portanto meu filho demanda praticamente todas as minhas horas livres.
+
 ```sh
 # Clone repository
-$ git clone 
+$ git clone
 
 # install dependencies
-$ yarn 
+$ yarn
 
 # run the project
 $ yarn dev
