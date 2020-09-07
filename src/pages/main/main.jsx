@@ -38,7 +38,7 @@ const Main = () => {
         <Input
           label="PASSWORD"
           id="password"
-          type="text"
+          type="password"
           {...password}
           isError={error}
           isLock
